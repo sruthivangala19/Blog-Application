@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog - MyBlog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2><a href="index.html">MyBlog</a></h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+
+    <main class="create-container">
+        <form class="create-card" id="blogForm">
+            <h1>Create a New Blog</h1>
+            <p>Share your ideas with the world.</p>
+
+            <label for="blogTitle">Blog Title</label>
+            <input type="text" id="blogTitle"
+                   placeholder="Enter blog title" required>
+
+            <label for="category">Category</label>
+            <select id="category" required>
+                <option value="">Choose a category</option>
+                <option>Technology</option>
+                <option>Education</option>
+                <option>Lifestyle</option>
+                <option>Travel</option>
+                <option>Other</option>
+            </select>
+
+            <label for="blogContent">Blog Content</label>
+            <textarea id="blogContent" rows="8"
+                      placeholder="Write your blog here..."
+                      required></textarea>
+
+            <button class="button" type="submit">Publish Blog</button>
+
+            <p id="blogMessage" role="status"></p>
+
+            <p><a href="dashboard.html">Back to Dashboard</a></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MyBlog. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
